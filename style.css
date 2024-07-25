@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+.main {
+  background-color: hsl(213, 19%, 18%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  color: white;
+  max-width: 400px;
+  padding: 25px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.img-container {
+  background-color: hsl(212, 8%, 34%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.img-container img {
+  width: 60%;
+  height: 60%;
+}
+.header {
+  font-weight: 700;
+}
+.para {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  gap:20px;
+}
+.num {
+  background-color: hsl(212, 8%, 34%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 19px;
+  cursor: pointer;
+  border: none;
+  color: hsl(217, 12%, 63%);
+}
+.num:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+.num:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: black;
+}
+.submit-btn {
+  cursor: pointer;
+  width: 100%;
+  padding-block: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+}
+.submit-btn:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: black;
+}
+.img-container1 {
+  width: 100px;
+  margin-inline: auto;
+}
+.img-container1 img {
+  width: 100%;
+}
+.num-selected p {
+  font-size: 15px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(212, 8%, 34%);
+  padding: 8px;
+  border-radius: 25px;
+}
+.para2 {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 25px;
+}
+@media screen and (max-width:500px) {
+    .list{
+    gap:15px;   
+    }
+    .main{
+        padding: 15px;
+        /* margin:10px; */
+    }
+    .container{
+    width: 300px;
+    }
+}
